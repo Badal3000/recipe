@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #aeaeae;
+}
+.page-container {
+    margin-bottom: 20px;
+}
+.content {
+    min-height: 80dvh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+
+}
+.card {
+    width: 150px;
+    font-size: large;
+    aspect-ratio: 1;
+    border: #aeaeae 3px solid;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    max-width: 400px;
+    height: 950px;
+    gap: 2px;
+    border-radius: 20px;
+    background-color:antiquewhite;
+    border: 2px rgb(14, 11, 11) solid;
+    box-shadow: 0 0 20px 20px rgb(47, 45, 45);
+}
+.card div {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 2px;
+    border: 2px black solid;
+    margin: 2px;
+}
+.btn {
+    font-size: larger;
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: aliceblue;
+    border-radius: 8px;
+    border-color: #aeaeae;
+    border: 1px black solid;
+    box-shadow: grey;
+}
+.btn.active {
+    background-color: #3f96fd; 
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 200px;
+    font-size: larger;
+
+}
+.pagination-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prev{
+    font-size: larger;
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: aliceblue;
+    border-radius: 8px;
+    border-color: #aeaeae;
+}
+.next{
+    font-size: larger;
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: aliceblue;
+    border-radius: 8px;
+    border-color: #aeaeae;
+}
+
+.pagination{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.truncated{
+    /* visibility: collapse; */
+    border: none;
+    background-color: transparent;
+    position: relative;
+    cursor: default;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+}
+.truncated::after{
+    box-sizing: border-box;
+    content: "...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 41px;
+    font-size: large;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    border: 1px black solid;
+    background-color: aliceblue;
+    opacity: 100%;
+}
+.card-img{
+    width: 100%;
+    border-radius: 19px;
+}
